@@ -20,15 +20,15 @@ def take_busy_days():
     return busy_days_without_holiday
 
 
-def take_wage(wage=31482):  # изменить оклад при необходимости
+def take_wage(salary=31482):  # изменить оклад при необходимости
 
-    wage_one_day = wage / take_busy_days()
-    wage_one_hour = round(wage_one_day / 8)
-    wage_evening = wage_one_hour * 5
-    wage_holiday = wage_one_hour * 16
-    print(f'Плата за одну смену равна: {wage_one_day}руб.')
-    print(f'Плата за вечеровку равна: {wage_evening}руб.')
-    print(f'Плата за выходной равна: {wage_holiday}руб.')
+    salary_one_day = salary / take_busy_days()
+    salary_one_hour = round(salary_one_day / 8)
+    salary_evening = salary_one_hour * 5
+    salary_holiday = salary_one_hour * 16
+    print(f'Плата за одну смену равна: {int(salary_one_day)}руб.')
+    print(f'Плата за вечеровку равна: {salary_evening}руб.')
+    print(f'Плата за выходной равна: {salary_holiday}руб.')
 
 
 take_wage()
