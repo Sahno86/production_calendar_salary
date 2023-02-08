@@ -26,6 +26,7 @@ def take_wage(wage=31482):  # изменить оклад при необход�
     wage_one_hour = round(wage_one_day / 8)
     wage_evening = wage_one_hour * 5
     wage_holiday = wage_one_hour * 16
+    print(f'Плата за одну смену равна: {wage_one_day}руб.')
     print(f'Плата за вечеровку равна: {wage_evening}руб.')
     print(f'Плата за выходной равна: {wage_holiday}руб.')
 
