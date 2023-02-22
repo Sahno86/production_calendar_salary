@@ -20,7 +20,7 @@ def take_busy_days():
     return busy_days_without_holiday
 
 
-def take_wage(salary=31482):  # изменить оклад при необходимости
+def take_wage(salary=37600):  # изменить оклад при необходимости
 
     salary_one_day = salary / take_busy_days()
     salary_one_hour = round(salary_one_day / 8)
